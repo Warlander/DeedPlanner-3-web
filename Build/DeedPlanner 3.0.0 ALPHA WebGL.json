@@ -1,0 +1,16 @@
+{
+"companyName": "Warlander",
+"productName": "DeedPlanner 3",
+"productVersion": "3.0.0",
+"dataUrl": "DeedPlanner 3.0.0 ALPHA WebGL.data.unityweb",
+"wasmCodeUrl": "DeedPlanner 3.0.0 ALPHA WebGL.wasm.code.unityweb",
+"wasmFrameworkUrl": "DeedPlanner 3.0.0 ALPHA WebGL.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.0f1"
+}
