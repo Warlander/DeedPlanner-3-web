@@ -3,9 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>DeedPlanner 3</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <title>DeedPlanner 3 | 3D Deed Planner for Wurm</title>
+    <meta name="description" content="Plan deeds and houses for Wurm Online and Wurm Unlimited in your browser with DeedPlanner 3.">
+    <link rel="canonical" href="https://deedplanner.warlander.app/">
+    <meta property="og:site_name" content="DeedPlanner 3">
+    <meta property="og:title" content="DeedPlanner 3 | 3D Deed Planner for Wurm">
+    <meta property="og:description" content="Plan deeds and houses for Wurm Online and Wurm Unlimited in your browser with DeedPlanner 3.">
+    <meta property="og:url" content="https://deedplanner.warlander.app/">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="64x64" href="TemplateData/favicon.png">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "DeedPlanner 3",
+        "url": "https://deedplanner.warlander.app/"
+      }
+    </script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -23,6 +38,10 @@
         <div id="unity-build-title">DeedPlanner 3</div>
       </div>
     </div>
+    <section id="app-description" aria-labelledby="app-title">
+      <h1 id="app-title">DeedPlanner 3</h1>
+      <p>Plan deeds and houses for Wurm Online and Wurm Unlimited in your browser with DeedPlanner 3.</p>
+    </section>
     <script>
       var canvas = document.querySelector("#unity-canvas");
 
@@ -59,10 +78,10 @@
         dataUrl: buildUrl + "/DeedPlanner 3 WebGL.data",
         frameworkUrl: buildUrl + "/DeedPlanner 3 WebGL.framework.js",
         codeUrl: buildUrl + "/DeedPlanner 3 WebGL.wasm",
-        streamingAssetsUrl: "StreamingAssets",
+        streamingAssetsUrl: new URL("StreamingAssets", document.baseURI).href,
         companyName: "Warlander",
         productName: "DeedPlanner 3",
-        productVersion: "3.4.3",
+        productVersion: "3.5.0",
         showBanner: unityShowBanner,
       };
 
